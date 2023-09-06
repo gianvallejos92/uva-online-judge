@@ -1,0 +1,14 @@
+While (B != 0 && N != 0) DO:
+    for i to B:
+        get Ri and put it in banks[i]
+
+    for i to N:
+        get D, C, V
+        banks[D-1] += V*-1
+        banks[C-1] += V
+
+    for i to range(len(banks)):
+        if (arr[i] < 0) return 'N'
+    
+    return 'S'
+
