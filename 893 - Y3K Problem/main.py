@@ -1,5 +1,3 @@
-import sys
-
 FEB_MONTH = 2
 FEB_LEAPS_DAYS = 29
 LAST_MONTH = 12
@@ -13,7 +11,7 @@ def is_leap(year):
 
 def leaps_between_years(initYear, endYear):
     cnt = 0
-    for x in range(initYear, endYear):
+    for x in range(initYear, endYear + 1):
         if is_leap(x):
             cnt += 1
     return cnt
@@ -48,17 +46,21 @@ def rest_n_days(n, day, month, year):
             day-=1
     return [day, month, year]
 
+import sys
+sys.stdin = open('C:\\Users\\GianVallejos\\OneDrive - The Ksquare Group\\Documents\\Repositories\\uva-online-judge\\893 - Y3K Problem\\input.txt', 'r')
+sys.stdout = open('C:\\Users\\GianVallejos\\OneDrive - The Ksquare Group\\Documents\\Repositories\\uva-online-judge\\893 - Y3K Problem\\output_2.txt', 'w')
+
 if __name__ == '__main__':
     
-    for line in sys.stdin:
-        N, day, month, year = list(map(int, line.rstrip().split()))[:4]
+    while True:
+        N, day, month, year = map(int, input().split())
         if N == 0 and day == 0 and month == 0 and year == 0:
             break
         
         if N > YEAR_DAYS:
             addYears = int(N/YEAR_DAYS)
-            restOfDays = N%YEAR_DAYS
-            numberOfLeaps = leaps_between_years(year, year + addYears)            
+            restOfDays = N%YEAR_DAYS            
+            numberOfLeaps = leaps_between_years(year, year + addYears)
             year += addYears
             debtDays = restOfDays - numberOfLeaps
             if debtDays > 0:
