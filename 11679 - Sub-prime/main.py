@@ -23,7 +23,6 @@ if __name__ == '__main__':
             banks[d-1] += v * -1
             banks[c-1] += v
 
-        
         print(evaluate_positives(banks))
 
     exit (0)
