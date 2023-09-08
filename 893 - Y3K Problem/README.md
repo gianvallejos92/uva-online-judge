@@ -1,6 +1,8 @@
 # 893 - Y3K Problem
 [Link: 893 - Y3K Problem (PDF)](https://onlinejudge.org/external/8/893.pdf)
 
+[Algorithm Solution - Geeks for Geeks](https://www.geeksforgeeks.org/date-after-adding-given-number-of-days-to-the-given-date/)
+
 We have heard a lot recently about the Y2K problem. According to the doom sayers, planes will fall out of the skies, businesses will crash and the world will enter a major depression as the bugs in software and hardware bite hard. While this panic is a very satisfactory state of affairs for the computing profession, since it is leading to lots of lucrative jobs, it will have a tendency to bring the profession into disrepute when almost no problems occur on 1/1/00. To help avoid this unseemly behaviour on any future occasion, you must write a program which will give the correct date for (almost) any number of future days - in particular, it must correctly predict the date N days ahead of any given date, where N is a number less than 1,000,000,000 and the given date is any date before the year 3000. 
 
 Remember that in the standard Gregorian calendar we use there are 365 days in a year, except for leap years in which there are 366. Leap years are all years divisible by 4 and not divisible by 100, except for those divisible by 400. Thus 1900 was not a leap year, 1904, 1908 ... 1996 were leap years, 2000 will be a leap year, 2100 will not be a leap year, etc. The number of days in each month in a normal year is 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31; in a leap year, the second month has 29 days.
