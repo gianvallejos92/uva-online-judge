@@ -1,0 +1,26 @@
+Case 1:
+No
+Yes
+Yes
+Case 2:
+Yes
+Yes
+No
+Yes
+No
+Case 3:
+Yes
+Case 4:
+Yes
+Case 5:
+Yes
+Yes
+Yes
+Yes
+Yes
+Case 6:
+Yes
+Yes
+Yes
+Yes
+Yes
